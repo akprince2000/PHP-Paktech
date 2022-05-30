@@ -11,10 +11,12 @@
     <h3>Allah Mohan!</h3>
 
      <?php
-       $food = "Banana";
-       $food_1 = " Apple";
+    //    $food = "Banana";
 
-       echo $food . $food_1;
+      /* $food_1 = " Apple";
+       $food_1 = " Apple"; */
+
+       echo "Comment";
         
     ?>
     

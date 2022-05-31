@@ -10,21 +10,20 @@
     
 
      <?php
-      //Object
-      class Phone{
-          public $model;
-          function phoneModel ($number){
-              global $model;
-              $model = $number;
-              echo "This is $model </br>";
-          }
-      }
-        
-      $apple = new phone;
-      $apple->phoneModel('iPhone 12');
+     //php Length
+      echo strlen ('I Love Bangladesg' . "<br>");
 
-      $samgsamg = new phone;
-      $samgsamg->phoneModel("alta 10");
+      //php wordcount
+      echo str_word_count("I love my Country");
+
+      //php text revers
+        echo strrev ('I love to eat pizza'); 
+        //php text are position
+       $chack = strpos('I love to eat pizza','to');
+        var_dump($chack);
+
+        //php sentence word replace/word-change
+        echo str_replace ('Pizza','Bargar','I Love to eat Pizza')
 
     ?>
     

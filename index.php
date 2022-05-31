@@ -8,16 +8,24 @@
 </head>
 <body>
     
-    <h3>Allah Mohan!</h3>
 
      <?php
-    //    $food = "Banana";
-
-      /* $food_1 = " Apple";
-       $food_1 = " Apple"; */
-
-       echo "Comment";
+      //Object
+      class Phone{
+          public $model;
+          function phoneModel ($number){
+              global $model;
+              $model = $number;
+              echo "This is $model </br>";
+          }
+      }
         
+      $apple = new phone;
+      $apple->phoneModel('iPhone 12');
+
+      $samgsamg = new phone;
+      $samgsamg->phoneModel("alta 10");
+
     ?>
     
 </body>

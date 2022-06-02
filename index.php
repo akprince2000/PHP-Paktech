@@ -5,51 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Procoder</title>
+    <title>PHP online</title>
 </head>
 
 <body>
 
 
     <?php
-    // echo "Allah Mohan" . "<br>";
-    /*
-     //php Length
-      echo strlen ('I Love Bangladesg' . "<br>");
+    //cgpa Calclutor
 
-      //php wordcount
-      echo str_word_count("I love my Country");
-
-      //php text revers
-        echo strrev ('I love to eat pizza'); 
-        //php text are position
-       $chack = strpos('I love to eat pizza','to');
-        var_dump($chack);
-
-        //php sentence word replace/word-change
-        echo str_replace ('Pizza','Bargar','I Love to eat Pizza')
-
-        */
-
-
-    //    $t = date("H");
-
-    // if ($t < "20") {
-    //   echo "Have a good day!";
-    // }
-    // $a = 9;
-    // while ($a <= 10) {
-    //     echo "Alla Mohan" . "</br>";
-    //     $a++;
-    // }
-
-    function test_name($name, $age, $district)
-    {
-        echo "My Name is <b>$name</b>, His age is <b>$age</b> and District is <b>$district</b> </br>";
+    $marks = -1;
+    if ($marks >= 80 && $marks <= 100) {
+        echo "<h1> A+ </h1>";
+    } elseif ($marks >= 70 && $marks <= 79) {
+        echo "<h1> A </h1>";
+    } elseif ($marks >= 70 && $marks <= 79) {
+        echo "<h1> A- </h1>";
+    } elseif ($marks >= 60 && $marks <= 69) {
+        echo "<h1> B </h1>";
+    } elseif ($marks >= 50 && $marks <= 59) {
+        echo "<h1> B- </h1>";
+    } elseif ($marks >= 40 && $marks <= 49) {
+        echo "<h1> C </h1>";
+    } elseif ($marks >= 33 && $marks <= 39) {
+        echo "<h1> D </h1>";
+    } elseif ($marks >= 0 && $marks <= 32) {
+        echo "<h1> F </h1>";
+    } else {
+        echo "<h1>Invalide Number</h1>";
     }
-    test_name("Prince", 18, "Jhenaidah");
-    test_name("Rakib", 20, "Dhaka");
-
 
     ?>
 

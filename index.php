@@ -1,3 +1,14 @@
+<?php
+if (isset($_POST['btn'])) {
+    $userName = $_POST['user_name'];
+    $userEmail = $_POST['email'];
+    $userPassword = $_POST['password'];
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,60 +21,30 @@
 
 <body>
 
+    <br><br><br>
+    <h2>User Name : <?php if (isset($userName)) {
+                        echo $userName;
+                    } ?></h2>
+    <h2>Email : <?php if (isset($userEmail)) {
+                    echo $userEmail;
+                     } ?></h2>
+    <h2>Password : <?php  if(isset($userPassword)){
+                    echo $userPassword;
+                    } ?></h2>
 
-    <?php
-    //cgpa Calclutor if else
-
-
-    // $marks = 0;
-    // if ($marks >= 80 && $marks <= 100) {
-    //     echo "<h1> A+ </h1>";
-    // } elseif ($marks >= 70 && $marks <= 79) {
-    //     echo "<h1> A </h1>";
-    // } elseif ($marks >= 60 && $marks <= 69) {
-    //     echo "<h1> A- </h1>";
-    // } elseif ($marks >= 50 && $marks <= 59) {
-    //     echo "<h1> B </h1>";
-    // } elseif ($marks >= 40 && $marks <= 49) {
-    //     echo "<h1> C </h1>";
-    // } elseif ($marks >= 33 && $marks <= 39) {
-    //     echo "<h1> D </h1>";
-    // } elseif ($marks >= 0 && $marks <= 32) {
-    //     echo "<h1> F </h1>";
-    // } else {
-    //     echo "<h1>Invalide Number</h1>";
-    // }
-    ?>
-
-    <?php
-    // //switch case
-    $marks = 0;
-    switch (true) {
-        case ($marks >= 80 && $marks <= 100):
-            echo "<h1>A+</h1>";
-            break;
-        case ($marks >= 70 && $marks <= 79):
-            echo "<h1>A</h1>";
-            break;
-        case ($marks >= 60 && $marks <= 69):
-            echo "<h1>A-</h1>";
-            break;
-        case ($marks >= 50 && $marks <= 59):
-            echo "<h1>B</h1>";
-            break;
-        case ($marks >= 40 && $marks <= 49):
-            echo "<h1>C</h1>";
-            break;
-        case ($marks >= 33 && $marks <= 39):
-            echo "<h1>D</h1>";
-            break;
-        case ($marks >= 0 && $marks <= 32):
-            echo "<h1>F</h1>";
-            break;
-        default:
-            echo "Your Number is Rong";
-    }
-    ?>
+    <form action="" method="POST">
+        </br>
+        <label>User Name : </label>
+        <input type="text" name="user_name" id="">
+        </br></br>
+        <label>Email :</label>
+        <input type="email" name="email" id="">
+        </br></br>
+        <label>Password :</label>
+        <input type="password" name="password" id="">
+        </br></br>
+        <input type="submit" value="Submit Valu" name="btn">
+    </form>
 
 
 </body>

@@ -9,24 +9,19 @@
 </head>
 
 <body>
-
+    <!-- php variable scope -->
     <?php
-    $cars = array(
-        array("Prince", "22", "2000"),
-        array("Rokey", "15", "2024"),
-        array("Biplob", "15", "2015")
-    );
-    for ($row = 0; $row < 3; $row++) {
-        echo "<p>Row Number <b style=color:red> $row</b></p>";
-        echo "<ul>";
 
-        for ($col = 0; $col < 3; $col++) {
-            echo "<li>" . $cars[$row][$col] . "</li>";
-        }
+    $age = 20;
 
-        echo "</ul>";
+    function test()
+    {
+        global $age;
+        $a = 10;
+        echo $a . "</br>";
+        echo $age;
     }
-
+    test();
 
 
 
